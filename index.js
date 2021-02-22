@@ -6,10 +6,11 @@ const {v4: uuidv4} = require('uuid');
 let accountNumber = 'account123';
 let serviceType = 'OPENSHIFT_CLUSTER';
 let initialEventTime = '2017-02-20T00:00:00.000Z';
+let amountOfInserts = 25;
 
 let events = [];
 let start = new Date(initialEventTime);
-for (let i = 0; i < 25; i++) {
+for (let i = 0; i < amountOfInserts; i++) {
 
     let offsetStart = new Date(start.getTime());
     offsetStart.setHours(start.getHours() + i);
