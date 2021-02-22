@@ -1,0 +1,19 @@
+{{#each events}}
+INSERT INTO events(id, account_number, timestamp, data)
+VALUES
+('{{eventId}}',
+'{{accountNumber}}',
+'{{timestamp}}',
+'{
+"account_number": "{{accountNumber}}",
+"event_id": "{{eventId}}",
+"service_type": "OPENSHIFT_CLUSTER",
+"instance_id": "{{instanceId}}",
+"measurements": [
+{
+"uom": "Cores",
+"value": {{coresValue}}
+}
+]
+}');
+{{/each}}
