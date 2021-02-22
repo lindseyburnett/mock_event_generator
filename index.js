@@ -4,7 +4,7 @@ const fs = require('fs');
 const {v4: uuidv4} = require('uuid');
 
 let accountNumber = 'account123';
-let serviceType = 'OPENSHIFT_CLUSTER';
+let serviceType = 'OpenShift Cluster';
 let initialEventTime = '2017-02-20T00:00:00.000Z';
 let amountOfInserts = 25;
 
